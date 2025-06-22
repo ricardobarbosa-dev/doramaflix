@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>doramaflix - plataform streaming films and series</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="navbar">
+      <div class="container">
+        <h1 class="logo">doramaflix<span>.</span></h1>
+        <nav class="desktop-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Films</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Doramas</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-buttons">
+          <a href="#" class="login">Log in</a>
+          <a href="#" class="open-account">Sign up</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button>
+
+        <div class="mobile-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Films</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Doramas</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner slide -->
+    <section class="banner">
+      <div class="banner-area">
+        <a href="#" class="active">
+          <img src="assets/images/demonslayer.webp" alt="New" />
+          <div class="banner-content">
+            <h1>Demon Slayer</h1>
+            <p>New episodes of Demon Slayer, watch now!</p>
+            <button class="btn-primary">
+              Watch now <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="assets/images/chainsaw-man.webp" alt="New" />
+          <div class="banner-content">
+            <h1>Chainsaw Man</h1>
+            <p>New episodes available, watch now!</p>
+            <button class="btn-primary">
+              Watch now <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="assets/images/solo.webp" alt="New" />
+          <div class="banner-content">
+            <h1>Solo Leveling</h1>
+            <p>Don't miss the latest action-packed episodes!</p>
+            <button class="btn-primary">
+              Watch now <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </a>
+
+        <a href="#">
+          <img src="assets/images/ApothecaryDiaries.webp" alt="New" />
+          <div class="banner-content">
+            <h1>The Apothecary Diaries</h1>
+            <p>Catch the new bloody adventures now!</p>
+            <button class="btn-primary">
+              Watch now <i class="fa-solid fa-play"></i>
+            </button>
+          </div>
+        </a>
+      </div>
+
+      <div class="banner-counter-area">
+        <div class="banner-counter">
+          <div class="banner-counter-item active">
+            <div class="banner-counter-point"></div>
+          </div>
+
+          <div class="banner-counter-item">
+            <div class="banner-counter-point"></div>
+          </div>
+
+          <div class="banner-counter-item">
+            <div class="banner-counter-point"></div>
+          </div>
+
+          <div class="banner-counter-item">
+            <div class="banner-counter-point"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- recommended -->
+    <section class="catalog-list">
+      <h2>Recommended<b> For You</b></h2>
+      <div class="catalog-area">
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/demonslayer.webp"
+                alt="Demon Slayer"
+              />
+            </div>
+            <div class="catalog-title">Demon Slayer</div>
+            <div class="catalog-info">
+              Japão, era Taisho. Tanjiro, um bondoso jovem que ganha a vida
+              vendendo carvão, descobre que sua família foi massacrada por um
+              demônio.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Anime +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/chainsaw-man.webp"
+                alt="Demon Slayer"
+              />
+            </div>
+            <div class="catalog-title">Chainsaw Man</div>
+            <div class="catalog-info">
+              Denji é um adolescente que mora com Pochita, o Demônio da
+              Motosserra. Por conta das dívidas que herdou de seu pai, ele vive
+              na miséria..
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Anime +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img src="assets/images/catalog/solo.webp" alt="Demon Slayer" />
+            </div>
+            <div class="catalog-title">Solo Leveling</div>
+            <div class="catalog-info">
+              Há mais de uma década, surgiu uma misteriosa passagem chamada
+              "portal", que conecta este mundo a uma dimensão diferente, o que
+              fez com que pessoas despertassem poderes únicos…
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Anime +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/ApothecaryDiaries.webp"
+                alt="Demon Slayer"
+              />
+            </div>
+            <div class="catalog-title">The Apothecary Diaries</div>
+            <div class="catalog-info">
+              Maomao levava uma vida tranquila ao lado de seu pai, um boticário
+              renomado. No entanto, sua vida muda da noite pro dia quando ela é
+              vendida como uma simples serva no palácio do imperador.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Anime +14</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- new -->
+    <section class="catalog-list">
+      <h2>New on doramaflix<b>.</b></h2>
+      <div class="catalog-area">
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/umamor.webp"
+                alt="A Love So Good"
+              />
+            </div>
+            <div class="catalog-title">A Love So Good</div>
+            <div class="catalog-info">
+              O ano é 2007 e os recém-formados Zhou Shui (Wang An Yu), um jovem
+              talentoso e idealista, e Da Ji (Wang Yu Wen), uma jovem leal e
+              dedicada, se apaixonam um pelo outro.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Dorama +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/cinderela.webp"
+                alt="A Modern Cinderella"
+              />
+            </div>
+            <div class="catalog-title">A Modern Cinderella</div>
+            <div class="catalog-info">
+              Responsável por cuidar do irmão menor sozinha, Ha Yun Seo (Shin
+              Hyun Been) sempre teve que dar tudo de si.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Dorama +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/disputa.webp"
+                alt="Immortal Dispute"
+              />
+            </div>
+            <div class="catalog-title">Immortal Dispute</div>
+            <div class="catalog-info">
+              A discípula de baixo escalão Li Qing Yue (Bai Lu) nunca imaginou
+              que poderia se tornar alguém relevante devido ao seu baixo nível
+              de poder espiritual.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Dorama +16</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+
+        <div class="catalog-item">
+          <a href="#">
+            <div class="catalog-photo">
+              <img
+                src="assets/images/catalog/duque.webp"
+                alt="The First Night with the Duke"
+              />
+            </div>
+            <div class="catalog-title">The First Night with the Duke</div>
+            <div class="catalog-info">
+              Um dia, a alma de uma universitária é transportada para o corpo de
+              Cha Sun Chaek (Seohyun), uma personagem secundária de sua webnovel
+              de romance favorita.
+            </div>
+          </a>
+          <div class="catalog-category">Leg | Dub <span>Dorama +14</span></div>
+          <div class="catalog-fav">
+            <img src="assets/images/ui/heart-3-line.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>
+        Copyright © 2025
+        <a href="https://doramaflix.com/" target="_blank">doramaflix</a>
+        | All rights reserved .
+      </p>
+      <p class="powered">
+        Powered by
+        <a href="#"
+          ><img src="assets/images/ui/logo_rb.png" alt="Ricardo Barbosa"
+        /></a>
+      </p>
+    </footer>
+
+    <!-- js -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
